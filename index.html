@@ -2,13 +2,48 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Code for favicon from W3schools -->
+    <link rel="icon" type="image/x-icon" href="Images/Decor/favicon.ico">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="ZainFont.css">
+    <!-- Code from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <div class="parallax fitScreen">
+        <h1 class="title zain-bold">
+            Welcome to my website!
+        </h1>
+        <h2 class="subtitle zain-regular">
+            My name is Amy Chen, and I am currently an undergraduate studying computer science at Carnegie Mellon
+            University. I am an artist and designer with interests in theoretical cs, animation, game design, and UI/UX.
+            <br><br>
+
+            This website is an ongoing project of mine to learn HTML, CSS, and Javascript. However, it also
+            serves as a place for me to display my work and act as a portfolio. Thus, everything you see here was drawn,
+            written, or coded by me!
+        </h2>
+    </div>
+
+    <!-- Code for navbar from W3schools -->
+    <ul class="zain-light">
+        <li><a class="navbarAccent" href="index.html">Home</a></li>
+        <li><a class="navbarAccent" href="subjects/aboutme/About.html">About Me</a></li>
+        <li><a href="subjects/STEM1.html">STEM 1</a></li>
+        <li><a href="subjects/STEM2.html">STEM 2</a></li>
+        <li><a href="subjects/Hum.html">Humanities</a></li>
+        <li><a href="subjects/Math.html">Math Modeling</a></li>
+        <li><a href="subjects/Physics.html">Physics</a></li>
+        <li><a href="subjects/CS.html">Computer Science</a></li>
+    </ul>
 
 </body>
 

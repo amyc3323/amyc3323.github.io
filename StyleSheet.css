@@ -1,0 +1,109 @@
+:root {
+    --mainClear: rgba(77, 40, 92, 0.7);
+    --mainLight: #4C385C;
+    --mainDark: #382440;
+    --accentLight: #C28A21;
+    --accentDark: #AB6B18;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive, serif;
+    text-align: center;
+    color: white;
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive, serif;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+a {
+    color: #FFBD42;
+}
+
+/* Code for ul, li, and navbar from W3Schools*/
+ul {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    display: grid;
+    align-items: center;
+
+    height: 10vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--mainLight);
+    font-size: 1.75rem;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    /*makes it grow to take up the rest of the flex space*/
+    /* flex-grow: 1;
+    min-width: 0; */
+    float: left;
+}
+
+li a {
+    height: 10vh;
+    display: block;
+    color: white;
+    text-align: center;
+    /*disables hyperlink underline*/
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--mainDark);
+
+}
+
+/* Title on each page*/
+.title {
+    margin: 10vh 15rem 5rem 15rem;
+    padding: 3rem 0rem;
+    background-color: var(--mainClear);
+}
+
+/* Subtitle*/
+.subtitle {
+    margin: 3rem 15rem;
+    padding: 1vw;
+    background-color: var(--mainClear);
+}
+
+/* Parallax for bg*/
+.parallax {
+    background-image: url("Images/Decor/Garden.png");
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Makes it 90 vh (other 10 for navbar)*/
+.fitScreen {
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+}
+
+/* Accent color for navBar*/
+.navbarAccent {
+    background-color: var(--accentLight);
+}
+
+.navbarAccent:hover {
+    background-color: var(--accentDark);
+}
