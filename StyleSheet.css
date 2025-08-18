@@ -33,6 +33,11 @@ h2 {
     align-items: center;
 }
 
+img{
+    height: 5vh;
+    width: auto;
+}
+
 /* Code for ul, li, and navbar from W3Schools*/
 .navbar-ul {
     height: 7vh;
