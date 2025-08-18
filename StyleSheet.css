@@ -2,8 +2,11 @@
     --mainClear: rgba(77, 40, 92, 0.7);
     --mainLight: #4C385C;
     --mainDark: #382440;
-    --accentLight: #C28A21;
-    --accentDark: #AB6B18;
+    --accentGoldLight: #C28A21;
+    --accentGoldDark: #AB6B18;
+    --accentPurpleLight: #24214a;
+    --accentPurpleDark: #18162b;
+
 }
 
 body {
@@ -11,61 +14,71 @@ body {
 }
 
 h1 {
-    font-family: 'Amatic SC', cursive, serif;
+    font-family: 'Zain', cursive, serif;
     text-align: center;
     color: white;
     font-size: 5.5rem;
 }
 
 h2 {
-    font-family: 'Amatic SC', cursive, serif;
+    font-family: 'Zain', cursive, serif;
     text-align: center;
     color: white;
     font-size: 2rem;
 }
 
-a {
-    color: #FFBD42;
+.flex { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Code for ul, li, and navbar from W3Schools*/
-ul {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    display: grid;
-    align-items: center;
-
-    height: 10vh;
-    list-style-type: none;
+.navbar-ul {
+    height: 7vh;
     margin: 0;
     padding: 0;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
     overflow: hidden;
     background-color: var(--mainLight);
     font-size: 1.75rem;
-    position: sticky;
-    top: 0;
 }
 
-li {
+.navbar-li {
     /*makes it grow to take up the rest of the flex space*/
-    /* flex-grow: 1;
-    min-width: 0; */
+    flex-grow: 1;
+    min-width: 0;
     float: left;
+    margin: 0;
+    padding: auto;
 }
 
-li a {
+.navbar-a {
     height: 10vh;
     display: block;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     /*disables hyperlink underline*/
     text-decoration: none;
 }
 
-li a:hover {
+.navbar-a:hover {
     background-color: var(--mainDark);
+}
 
+#sub-navbar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--mainLight);
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
 }
 
 /* Title on each page*/
@@ -73,6 +86,7 @@ li a:hover {
     margin: 10vh 15rem 5rem 15rem;
     padding: 3rem 0rem;
     background-color: var(--mainClear);
+    font-size: 10rem;
 }
 
 /* Subtitle*/
@@ -80,6 +94,13 @@ li a:hover {
     margin: 3rem 15rem;
     padding: 1vw;
     background-color: var(--mainClear);
+}
+
+.purple-double-border {
+    border-style: double;
+    border-width: 1rem;
+    border-radius: 0.5rem;
+    border-color: var(--mainDark);
 }
 
 /* Parallax for bg*/
@@ -95,15 +116,23 @@ li a:hover {
 /* Makes it 90 vh (other 10 for navbar)*/
 .fitScreen {
     width: 100%;
-    height: 90vh;
+    height: 93vh;
     overflow: auto;
 }
 
 /* Accent color for navBar*/
-.navbarAccent {
-    background-color: var(--accentLight);
+.accent-gold {
+    background-color: var(--accentGoldLight);
 }
 
-.navbarAccent:hover {
-    background-color: var(--accentDark);
+.accent-gold:hover {
+    background-color: var(--accentGoldDark);
+}
+
+.accent-purple {
+    background-color: var(--accentPurpleLight);
+}
+
+.accent-purple:hover {
+    background-color: var(--accentPurpleDark);
 }
