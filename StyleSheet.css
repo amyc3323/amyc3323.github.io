@@ -2,8 +2,10 @@
     --mainClear: rgba(77, 40, 92, 0.7);
     --mainLight: #4C385C;
     --mainDark: #382440;
-    --accentGoldLight: #C28A21;
-    --accentGoldDark: #AB6B18;
+    --mainVeryLight: #e7caf1;
+    --accentGoldLight: #c28a21;
+    --accentGoldDark: #ab6b18;
+    --accentGoldVeryLight: #fff2d7;
     --accentPurpleLight: #24214a;
     --accentPurpleDark: #18162b;
 
@@ -27,14 +29,34 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-family: 'Zain', cursive, serif;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Zain', cursive, serif;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.resume {
+    border-style: none;
+    width: 100%;
+    height: 90vh;
+}
+
 .flex { 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-img{
-    height: 5vh;
+.icon {
+    height: 3vh;
     width: auto;
 }
 
@@ -54,6 +76,7 @@ img{
 .navbar-li {
     /*makes it grow to take up the rest of the flex space*/
     flex-grow: 1;
+    flex-basis: 0;
     min-width: 0;
     float: left;
     margin: 0;
@@ -86,6 +109,23 @@ img{
     padding: 0;
 }
 
+/* Accent color for navBar*/
+.accent-gold {
+    background-color: var(--accentGoldLight);
+}
+
+.accent-gold:hover {
+    background-color: var(--accentGoldDark);
+}
+
+.accent-purple {
+    background-color: var(--accentPurpleLight);
+}
+
+.accent-purple:hover {
+    background-color: var(--accentPurpleDark);
+}
+
 /* Title on each page*/
 .title {
     margin: 10vh 15rem 5rem 15rem;
@@ -108,6 +148,13 @@ img{
     border-color: var(--mainDark);
 }
 
+.gold-double-border {
+    border-style: double;
+    border-width: 1rem;
+    border-radius: 0.5rem;
+    border-color: var(--accentGoldLight);
+}
+
 /* Parallax for bg*/
 .parallax {
     background-image: url("Images/Decor/Garden.png");
@@ -125,19 +172,40 @@ img{
     overflow: auto;
 }
 
-/* Accent color for navBar*/
-.accent-gold {
-    background-color: var(--accentGoldLight);
+.home-section {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+    height: 90vh-5rem;
+    margin: 0;
 }
 
-.accent-gold:hover {
-    background-color: var(--accentGoldDark);
+.home-container {
+    flex-direction: column;
 }
 
-.accent-purple {
-    background-color: var(--accentPurpleLight);
+.home-text-right {
+    flex-grow: 2;
+    margin-right: 5rem;
 }
 
-.accent-purple:hover {
-    background-color: var(--accentPurpleDark);
+.home-text-left {
+    flex-grow: 2;
+    margin-left: 5rem;
+}
+
+.gold-bg{
+    background-color: var(--accentGoldVeryLight);
+}
+
+.purple-bg{
+    background-color: var(--mainVeryLight);
+}
+
+.home-image {
+    width: auto;
+    max-height: 75vh;
+    max-width: 40vw;
 }
