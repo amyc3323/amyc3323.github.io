@@ -15,20 +15,6 @@ body {
     margin: 0px;
 }
 
-h1 {
-    font-family: 'Zain', cursive, serif;
-    text-align: center;
-    color: white;
-    font-size: 5.5rem;
-}
-
-h2 {
-    font-family: 'Zain', cursive, serif;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-}
-
 h3 {
     font-family: 'Zain', cursive, serif;
     text-align: center;
@@ -128,9 +114,13 @@ p {
 
 /* Title on each page*/
 .title {
-    margin: 10vh 15rem 5rem 15rem;
+    margin: 10vh 15rem 3rem 15rem;
     padding: 3rem 0rem;
     background-color: var(--mainClear);
+
+    font-family: 'Zain', cursive, serif;
+    text-align: center;
+    color: white;
     font-size: 10rem;
 }
 
@@ -139,6 +129,11 @@ p {
     margin: 3rem 15rem;
     padding: 1vw;
     background-color: var(--mainClear);
+
+    font-family: 'Zain', cursive, serif;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
 }
 
 .purple-double-border {
