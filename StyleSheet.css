@@ -29,11 +29,11 @@ p {
     font-size: 1.5rem;
 }
 
-a {
+.link {
     font-family: 'Zain', cursive, serif;
     color: var(--mainLight);
 }
-a:hover{
+.link:hover{
     font-family: 'Zain', cursive, serif;
     color: var(--accentGoldDark);
 }
