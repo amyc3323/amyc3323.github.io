@@ -29,6 +29,22 @@ p {
     font-size: 1.5rem;
 }
 
+a {
+    font-family: 'Zain', cursive, serif;
+    color: var(--mainLight);
+}
+a:hover{
+    font-family: 'Zain', cursive, serif;
+    color: var(--accentGoldDark);
+}
+
+figcaption{
+    font-family: 'Zain', cursive, serif;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
 .resume {
     border-style: none;
     width: 100%;
