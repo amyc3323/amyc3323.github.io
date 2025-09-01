@@ -9,6 +9,9 @@
     --accentPurpleLight: #24214a;
     --accentPurpleDark: #18162b;
 
+    --mainLink: #56009d;
+    --accentLink: #b57600;
+
 }
 
 body {
@@ -20,6 +23,16 @@ h3 {
     text-align: center;
     color: black;
     font-size: 3rem;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Zain', cursive, serif;
+    text-align: center;
+    color: black;
+    font-size: 1.75em;
+    font-weight: 300;
+    margin: 0;
 }
 
 p {
@@ -27,15 +40,6 @@ p {
     text-align: center;
     color: black;
     font-size: 1.5rem;
-}
-
-.link {
-    font-family: 'Zain', cursive, serif;
-    color: var(--mainLight);
-}
-.link:hover{
-    font-family: 'Zain', cursive, serif;
-    color: var(--accentGoldDark);
 }
 
 figcaption{
@@ -64,6 +68,7 @@ figcaption{
 
 /* Code for ul, li, and navbar from W3Schools*/
 .navbar-ul {
+    z-index:1;
     height: 7vh;
     margin: 0;
     padding: 0;
@@ -183,28 +188,48 @@ figcaption{
     overflow: auto;
 }
 
+.home-container {
+    flex-direction: column;
+}
+
 .home-section {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5rem;
-    height: 90vh-5rem;
+    padding: 5vh;
+    min-height: 85vh;
     margin: 0;
 }
-
-.home-container {
-    flex-direction: column;
-}
-
 .home-text-right {
-    flex-grow: 2;
+    flex: 2;
     margin-right: 5rem;
 }
 
 .home-text-left {
-    flex-grow: 2;
+    flex: 2;
     margin-left: 5rem;
+}
+
+.home-image {
+    width: auto;
+    max-height: 75vh;
+    max-width: 40vw;
+}
+
+.link {
+    font-family: 'Zain', cursive, serif;
+    color: var(--mainLink);
+}
+
+.link:hover{
+    font-family: 'Zain', cursive, serif;
+    color: var(--accentLink);
+}
+
+.page-text-right {
+    margin-left: 5rem;
+    flex: 1;
 }
 
 .gold-bg{
@@ -215,8 +240,24 @@ figcaption{
     background-color: var(--mainVeryLight);
 }
 
-.home-image {
-    width: auto;
-    max-height: 75vh;
-    max-width: 40vw;
+.youtube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: calc(56.25% * 0.65);; /* 16:9 */
+    width: 65%;
+    height: 0;
+    flex:1;
+}
+
+.title-link{
+    font-family: 'Zain', cursive, serif;
+    color: black;
+    font-style: italic;
 }
