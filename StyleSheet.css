@@ -232,6 +232,13 @@ figcaption{
     flex: 1;
 }
 
+.page-image {
+    width: auto;
+    max-height: 75vh;
+    max-width: 45vw;
+    flex: 1;
+}
+
 .gold-bg{
     background-color: var(--accentGoldVeryLight);
 }
